@@ -6,6 +6,7 @@ import { ProductsComponent } from './products/products.component'; // LO IMPORTO
 import { ProductComponent } from './product/product.component';// LO IMPORTO MANUAL
 import { SharedModule } from '../shared/shared.module';// LO IMPORTO MANUAL
 
+
 @NgModule({
   declarations: [
     ProductsComponent, // LO IMPORTO

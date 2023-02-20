@@ -13,8 +13,12 @@ import { HttpClientModule } from "@angular/common/http";
 import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { DetailsComponent } from './pages/gestion/details/details.component';
 import { SharedModule } from './modules/shared/shared.module';
-//import {MatFormFieldModule} from '@angular/material/form-field'; l pasamos shaerd
-// import {MatInputModule} from '@angular/material/input';  l pasamos shaerd
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatFormFieldModule} from '@angular/material/form-field'; //import {MatFormFieldModule} from '@angular/material/form-field'; l pasamos shaerd
+import {MatInputModule} from '@angular/material/input'; // import {MatInputModule} from '@angular/material/input';  l pasamos shaerd
+import {MatCommonModule} from '@angular/material/core';
+
+
 
 @NgModule({
   declarations: [
@@ -26,18 +30,18 @@ import { SharedModule } from './modules/shared/shared.module';
     FooterComponent,
     // ProductComponent,  lo pasamos a modules 
     DetailsComponent,
-   
-   
-  ],
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    //MatFormFieldModule, l pasamos shaerd
-    //MatInputModule l pasamos shaerd
-    SharedModule   // importamos el moduloe creado shared aquie 
+    MatFormFieldModule,//MatFormFieldModule, l pasamos shaerd
+    MatInputModule,//MatInputModule l pasamos shaerd
+    SharedModule,
+    BrowserAnimationsModule,   // importamos el moduloe creado shared aquie 
+    MatCommonModule
   ],
 
 

@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 import { Producto } from 'src/app/interfaces/Products'; // nos traemos la
 
 @Component({
-  selector: 'app-gestion',
+  selector: 'app-gestion', 
   templateUrl: './gestion.component.html',
   styleUrls: ['./gestion.component.css']
 })
@@ -59,7 +59,7 @@ export class GestionComponent {
         // console.log(this.newProduct)
         this.productsService.postProduct(this.newProduct).subscribe((data)=>{
          this.router.navigate(["/products"])
-           })
+        })
    
        }
 

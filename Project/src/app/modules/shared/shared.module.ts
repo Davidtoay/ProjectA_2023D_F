@@ -1,3 +1,5 @@
+import { MatIconModule } from '@angular/material/icon';
+import { MatCommonModule } from '@angular/material/core';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {MatInputModule} from '@angular/material/input'; // lo importams de// lo importams de angular materila  angular materila 
